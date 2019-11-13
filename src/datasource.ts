@@ -416,7 +416,8 @@ export class BigQueryDatasource {
           from: options.range.from.valueOf().toString(),
           to: options.range.to.valueOf().toString(),
           useLegacySql: false,
-          useQueryCache: true
+          useQueryCache: true,
+          location: "EU"
         },
         method: "POST",
         requestId: options.annotation.name,
@@ -462,7 +463,8 @@ export class BigQueryDatasource {
         data: {
           query,
           useLegacySql: false,
-          useQueryCache: true
+          useQueryCache: true,
+          location: "EU"
         },
         method: "POST",
         requestId,
